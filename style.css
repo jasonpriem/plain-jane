@@ -1,0 +1,580 @@
+/*
+THEME NAME: Sandbox
+THEME URI: http://www.plaintxt.org/themes/sandbox/
+DESCRIPTION: Rich with powerful and dynamic semantic class selectors, Sandbox is a canvas for CSS artists
+VERSION: 1.6.1
+AUTHOR: <a href="http://andy.wordpress.com/">Andy Skelton</a> &amp; <a href="http://www.plaintxt.org/">Scott Allan Wallick</a>
+AUTHOR URI:
+TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar
+*/
+
+/* Two-column with sidebar on left from the /examples/ folder  */
+@import url('examples/2c-l.css');
+
+/* Just some example content */
+div.skip-link {
+position:absolute;
+right:1em;
+top:1em;
+}
+
+div#menu {
+background:#EEE;
+height:1.5em;
+margin:1em 0;
+width:100%;
+}
+
+div#menu ul,div#menu ul ul {
+line-height:1;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+div#menu ul a {
+display:block;
+margin-right:1em;
+padding:0.2em 0.5em;
+text-decoration:none;
+}
+
+div#menu ul ul ul a {
+font-style:italic;
+}
+
+div#menu ul li ul {
+left:-999em;
+position:absolute;
+}
+
+div#menu ul li:hover ul {
+left:auto;
+}
+
+.entry-title,.entry-meta {
+clear:both;
+}
+
+div#container {
+margin-top:100px;
+}
+
+form#commentform .form-label {
+margin:1em 0 0;
+}
+
+form#commentform span.required {
+background:#fff;
+color:#c30;
+}
+
+form#commentform,form#commentform p {
+padding:0;
+}
+
+input#author,input#email,input#url,textarea#comment {
+padding:0.2em;
+}
+
+div.comments ol li {
+margin:0 0 3.5em;
+}
+
+textarea#comment {
+height:13em;
+margin:0 0 0.5em;
+overflow:auto;
+width:66%;
+}
+
+.alignright,img.alignright{
+float:right;
+margin:1em 0 0 1em;
+}
+
+.alignleft,img.alignleft{
+float:left;
+margin:1em 1em 0 0;
+}
+
+.aligncenter,img.aligncenter{
+display:block;
+margin:1em auto;
+text-align:center;
+}
+
+div.gallery {
+clear:both;
+height:180px;
+margin:1em 0;
+width:100%;
+}
+
+p.wp-caption-text{
+font-style:italic;
+}
+
+div.gallery dl{
+margin:1em auto;
+overflow:hidden;
+text-align:center;
+}
+
+div.gallery dl.gallery-columns-1 {
+width:100%;
+}
+
+div.gallery dl.gallery-columns-2 {
+width:49%;
+}
+
+div.gallery dl.gallery-columns-3 {
+width:33%;
+}
+
+div.gallery dl.gallery-columns-4 {
+width:24%;
+}
+
+div.gallery dl.gallery-columns-5 {
+width:19%;
+}
+
+div#nav-above {
+display:none;
+}
+
+div#nav-below {
+margin-top:1em;
+}
+
+div#nav-images {
+height:150px;
+margin:1em 0;
+}
+
+div.navigation {
+height:3.25em;
+}
+
+div.navigation div.nav-next {
+float:right;
+text-align:right;
+}
+
+div.sidebar h3 {
+font-size:1.2em;
+}
+
+div.sidebar input#s {
+width:7em;
+}
+
+div.sidebar li {
+list-style:none;
+margin:0 0 2em;
+}
+
+div.sidebar li form {
+margin:0.2em 0 0;
+padding:0;
+}
+
+div.sidebar ul ul {
+margin:.5em 0;
+}
+
+div.sidebar ul ul li {
+list-style:disc;
+margin:0;
+}
+
+div.sidebar ul ul ul {
+margin:0 0 0 0.5em;
+}
+
+div.sidebar ul ul ul li {
+list-style: none;
+}
+
+div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
+float:left;
+}
+
+div#footer {
+text-align:center;
+border-top:1px solid #eee;
+padding:50px 0;
+}
+div#footer p {
+    width: 600px;
+    margin:0 auto;
+}
+
+
+input#author,input#email,input#url,div.navigation div {
+width:50%;
+}
+
+div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
+margin:.2em 0;
+padding:0;
+}
+
+/**
+* here are the styles I've added:
+*
+*/
+body {
+    margin:0;
+    padding:0;
+    line-height: 1.6;
+    font-family:'Merriweather', serif;
+    color:#333;
+}
+body a {
+    text-decoration:none;
+    color:#DD4814;
+}
+body a:hover {
+    text-decoration:underline;
+}
+body a img {
+    border:none;
+}
+body p {
+    margin: 0 .2em 1em;
+}
+body code {
+    font-size:1.1em;
+    background:#eee;
+    padding:.2em;
+}
+#header, #primary, h1,h2{
+    font-family:'Lato', sans-serif;
+    letter-spacing: 0px;
+}
+
+/* styles for the CV page */
+body.pageid-346 strong {
+	color: #000;
+}
+
+/* heading stuff */
+body.page h2.entry-title {
+    display:none;
+}
+body.home div.entry-content h2,
+body.pageid-346 div.entry-content h2 {
+    margin-top: 50px;
+}
+body div.hentry h2:first-child,
+body h2.entry-title,
+body h2.page-title {
+    margin-top:0;
+    padding-top:0;
+}
+div#content {
+    width:670px;
+    margin-left:200px;
+    font-size:14px;
+    line-height: 1.8;
+
+   
+}
+div.hentry {
+    margin-bottom: 50px;
+}
+h3, h4 {
+    margin-bottom:.1em;
+}
+h2,h3,h4{
+    color:#777;
+}
+h2 {
+    border-bottom: 1px solid #eee;
+}
+h2.entry-title {
+    border:none;
+}
+h1, h2 {
+}
+
+/* top of the page */
+div#header{
+    float:right;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+div#header-content{
+    background-image: url('./img/header-bg.png');
+/*    background:#fafafa;*/
+    background-repeat:repeat-x;
+    background-position: bottom;
+    width:100%;
+    float:left;
+
+}
+div#header-shadow {
+    height:20px;
+    width:100%;
+    clear:both;
+    background:url('./img/header-shadow.png') repeat-x;
+    border-top:1px solid #fff;
+}
+h1 {
+    margin:0;
+    padding:0 0 0 20px;
+    float:left;
+    font-size:20px;
+    
+}
+h1 a {
+    color:#DD4814;
+    text-decoration: none;
+    text-shadow:0px 1px #fff;
+}
+h1 a:hover {
+    color:#DD4814;
+    text-decoration: none;
+}
+h1 span.loc {
+    font-weight:normal;
+    color:#888;
+}
+div#nav {
+    float:right;
+    width: 60%;
+}
+
+div#nav a {
+    color:#888;
+    padding: 4px 0.5em;
+    display:block;
+    font-size:15px;
+    background-repeat:repeat-x;
+    background-position:center center;
+}
+body div#nav a:hover {
+/*    background-image: url('./img/header-bg-down.png');*/
+    text-decoration: none;
+    color:#DD4814;
+    background:#f6f6f6;
+
+}
+div#nav ul {
+    float:right;
+    margin:0 .2em 0;
+}
+div#nav li {
+    float:left;
+    list-style: none;
+    padding: 0;
+}
+div#nav form {
+    float:right;
+    margin:5px;
+}
+div#nav form div {
+    float:right;
+}
+div#nav input#s {
+    border:1px solid #ddd;
+    color:#888;
+    float:left;
+    padding:2px;
+    margin:0;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+div#nav input#s:focus{
+    border:1px solid #DD4814;
+}
+div#nav input.button{
+    padding:.1em 0;
+    overflow:hidden;
+    display:none;
+    float:left;
+    color:#888;
+    background-color:#eee;
+    border:none;
+}
+
+div#nav input.button:hover {
+    cursor: pointer;
+    background:#fff;
+}
+
+
+body.home #nav a.home{ display:none; }
+body.blog #nav a.blog{ display:none; }
+
+/* gallery */
+#gal-wrapper ul li{
+    display: inline;
+    list-style-type: none;
+}
+
+/* sidebar */
+div.sidebar{
+    text-align: right;
+}
+div#primary{
+    margin-top:106px;
+    font-size:14px;
+}
+div#primary.sidebar ul li{
+    list-style-type: none;
+}
+div#primary.sidebar ul li a{
+    color:#777;
+}
+div#primary.sidebar ul li a:hover{
+    color:#DD4814;
+}
+body #categories {
+    display:none;
+}
+body.blog #categories,
+body.single #categories,
+body.search #categories,
+body.category #categories {
+    display:block;
+}
+
+/* index page */
+body.blog h2 {
+    margin-bottom:0
+}
+body.blog div.entry-content {
+    margin-top:1em;
+}
+
+/* single page */
+body.single div.entry-meta {
+    font-style:italic;
+    color:#888;
+}
+
+/* footer */
+#footer p {
+    color:#888;
+    margin:.5em;
+    font-size: .8em;
+}
+
+
+
+
+
+
+
+
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CC Attribution-No Derivative Works 2.5 Brazil - http://creativecommons.org/licenses/by-nd/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-nav-btnNext:hover { 
+	right:-50px;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
